@@ -135,6 +135,7 @@ body {
   bottom: -50px;
   left: -60px;
   transform: rotate(-10deg);
+  padding-top: 10px;
 }
 
 #watch:hover {
