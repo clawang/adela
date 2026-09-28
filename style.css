@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Arial Narrow";
-  src: url("/assets/arialnarrow.ttf") format("truetype");
+  src: url("./assets/arialnarrow.ttf") format("truetype");
   font-weight: normal; /* or 400 */
   font-style: normal;
 }
@@ -8,8 +8,15 @@
 /* 2. Define the Bold variant */
 @font-face {
   font-family: "Arial Narrow"; /* Must match the regular variant name exactly */
-  src: url("/assets/arialnarrow_bold.ttf") format("truetype");
+  src: url("./assets/arialnarrow_bold.ttf") format("truetype");
   font-weight: bold; /* or 700 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Prima";
+  src: url("./assets/Prima-Regular.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -34,6 +41,16 @@ body {
   justify-content: center;
 }
 
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
+  background: var(--pink);
+  mix-blend-mode: darken;
+  opacity: 0.5;
+}
+
 .main {
   width: 100%;
   height: 100vh;
@@ -49,6 +66,7 @@ body {
   bottom: 20px;
   padding: 0 50px;
   max-width: 1400px;
+  z-index: 10;
 }
 
 .banner {
@@ -91,13 +109,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Arial Narrow", sans-serif;
+  font-family: "Prima", "Arial", sans-serif;
   font-weight: 800;
   font-size: 20px;
   line-height: 20px;
   transition: 0.2s;
   cursor: pointer;
   text-align: center;
+  z-index: 10;
 }
 
 #watch-overlay {
