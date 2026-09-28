@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Arial Narrow";
-  src: url("/assets/arialnarrow.ttf") format("ttf");
+  src: url("/assets/arialnarrow.ttf") format("truetype");
   font-weight: normal; /* or 400 */
   font-style: normal;
 }
@@ -8,7 +8,7 @@
 /* 2. Define the Bold variant */
 @font-face {
   font-family: "Arial Narrow"; /* Must match the regular variant name exactly */
-  src: url("/assets/arialnarrow_bold.ttf") format("ttf");
+  src: url("/assets/arialnarrow_bold.ttf") format("truetype");
   font-weight: bold; /* or 700 */
   font-style: normal;
 }
@@ -54,7 +54,7 @@ body {
 .banner {
   width: 100%;
   background: black;
-  font-family: "Arial Narrow";
+  font-family: "Arial Narrow", sans-serif;
   text-transform: uppercase;
   color: white;
   font-weight: 800;
@@ -91,7 +91,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Arial Narrow";
+  font-family: "Arial Narrow", sans-serif;
   font-weight: 800;
   font-size: 20px;
   line-height: 20px;
