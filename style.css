@@ -76,10 +76,10 @@ body {
   text-transform: uppercase;
   color: white;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 16px;
   position: fixed;
   top: 0;
-  height: 20px;
+  height: 24px;
   overflow: hidden;
   z-index: 100;
   display: flex;
@@ -87,7 +87,8 @@ body {
 
 .running-line {
   flex-shrink: 0;
-  animation: run 10s linear infinite;
+  padding-right: 5px;
+  animation: run 20s linear infinite;
 }
 
 @keyframes run {
@@ -96,7 +97,7 @@ body {
   }
   /* Magic is here. This is the width of the elem with text after rendering the page */
   to {
-    transform: translateX(-1133px);
+    transform: translateX(-1725px);
   }
 }
 
@@ -109,7 +110,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Prima", "Arial", sans-serif;
+  font-family: "Prima", "Arial Narrow", sans-serif;
   font-weight: 800;
   font-size: 20px;
   line-height: 20px;
@@ -139,7 +140,7 @@ body {
 }
 
 #watch:hover {
-  transform: rotate(-10deg) scale(1.05);
+  transform: rotate(-10deg) scale(1.1);
 }
 
 #shop {
@@ -150,18 +151,18 @@ body {
 }
 
 #shop:hover {
-  transform: rotate(-10deg) scale(1.05);
+  transform: rotate(-10deg) scale(1.1);
 }
 
 #tour {
-  top: 35%;
+  top: 33%;
   right: 5%;
   transform: rotate(10deg);
   padding-top: 10px;
 }
 
 #tour:hover {
-  transform: rotate(10deg) scale(1.05);
+  transform: rotate(10deg) scale(1.1);
 }
 
 #sign-up {
@@ -172,7 +173,7 @@ body {
 }
 
 #sign-up:hover {
-  transform: rotate(-5deg) scale(1.05);
+  transform: rotate(-5deg) scale(1.1);
 }
 
 @media (max-width: 768px) {
@@ -208,6 +209,6 @@ body {
   }
 
   #sign-up:hover {
-    transform: rotate(10deg) scale(1.05);
+    transform: rotate(10deg) scale(1.1);
   }
 }
